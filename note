@@ -1,0 +1,8 @@
+"The PDTB-3 full-text subcorpus" contains full-text annotations over 145 texts of the PDTB. This full-text subcorpus differs from the PDTB-3 annotations of these texts in two ways: 
+
+(1) It contains NEW annotations of cross-paragraph implicit relations that are not provided in PDTB-3 (or PDTB-2), making each text continuously annotated across all sentences, and 
+
+(2) The guidelines for EntRel and NoRel depart from PDTB-3 (and PDTB-2) guidelines, as a result of which certain tokens of PDTB-3 are annotated differently in this subcorpus. The annotation approach and related research for the subcorpus annotations are described in the following paper, which should be cited for this work and any use of the subcorpus:
+
+Rashmi Prasad, Katherine Forbes-Riley, and Alan Lee. "Towards Full Text Shallow Discourse Relation Annotation: Experiments with Cross-Paragraph Implicit Relations in the PDTB." In Proceedings of the 18th Annual SIGdial Meeting on Discourse and Dialogue, pp. 7-16. 2017.
+
