@@ -17,5 +17,5 @@ EntRel and NoRel Relation types are refined as NoSemRel, SemEntRel or NoRel. Bec
   (d) NoRel ==> NoRel
 ***
 
-
+This package also includes the Annotation tool used to annotate the corpus, along with the configuration file. See PDTB tools page for usage: https://www.seas.upenn.edu/~pdtb/pdtb3-tools.shtml 
 
