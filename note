@@ -1,6 +1,7 @@
 "The PDTB-3 full-text subcorpus" contains PDTB-style annotations of cross-paragraph implicit relations over 145 source texts of the PDTB. as described in the following paper:
 
 Rashmi Prasad, Katherine Forbes-Riley, and Alan Lee. "Towards Full Text Shallow Discourse Relation Annotation: Experiments with Cross-Paragraph Implicit Relations in the PDTB." In Proceedings of the 18th Annual SIGdial Meeting on Discourse and Dialogue, pp. 7-16. 2017.
+https://aclweb.org/anthology/W17-5502
 
 The goal of this work was to provide full-text annotations of PDTB-style discourse relations in texts. 
 
