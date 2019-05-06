@@ -1,8 +1,21 @@
-"The PDTB-3 full-text subcorpus" contains full-text annotations over 145 texts of the PDTB. This full-text subcorpus differs from the PDTB-3 annotations of these texts in two ways: 
-
-(1) It contains NEW annotations of cross-paragraph implicit relations that are not provided in PDTB-3 (or PDTB-2), making each text continuously annotated across all sentences, and 
-
-(2) The guidelines for EntRel and NoRel depart from PDTB-3 (and PDTB-2) guidelines, as a result of which certain tokens of PDTB-3 are annotated differently in this subcorpus. The annotation approach and related research for the subcorpus annotations are described in the following paper, which should be cited for this work and any use of the subcorpus:
+"The PDTB-3 full-text subcorpus" contains PDTB-style annotations of cross-paragraph implicit relations over 145 source texts of the PDTB. as described in the following paper:
 
 Rashmi Prasad, Katherine Forbes-Riley, and Alan Lee. "Towards Full Text Shallow Discourse Relation Annotation: Experiments with Cross-Paragraph Implicit Relations in the PDTB." In Proceedings of the 18th Annual SIGdial Meeting on Discourse and Dialogue, pp. 7-16. 2017.
+
+The goal of this work was to provide full-text annotations of PDTB-style discourse relations in texts. 
+
+To obtain the full-text annotations for the texts in this subcorpus, the annotations should be merged with the PDTB-3 annotations (available from LDC: https://catalog.ldc.upenn.edu/LDC2019T05).
+
+Guidelines for the cross-para annotations differ from the main PDTB guidelines with respect to the treatment of EntRel. The differences are described in detail in the paper above. Briefly, the following difference is the most significant difference and will need to be handled (as described below) when merging the subcorpus with the main corpus.
+
+***
+EntRel and NoRel Relation types are refined as NoSemRel, SemEntRel or NoRel. Because these refinements are new to the subcorpus, a proper merge of the two versions of the corpus should be done by backing off to EntRel and NoRel. This can be done as follows: In the subcorpus, we have used the Arg1FeatSpan and Arg2FeatSpan (see PDTB tools page to find these fields in the data: https://www.seas.upenn.edu/~pdtb/pdtb3-tools.shtml) to annotate an entity coreference between the adjacent sentences. Apply the following for back-off to EntRel and NoRel:
+
+  (a) NoSemRel with entity coreference ==> EntRel
+  (b) NoSemRel without entity coreference ==> NoRel
+  (c) SemEntRel ==> EntRel
+  (d) NoRel ==> NoRel
+***
+
+
 
